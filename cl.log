@@ -54,3 +54,18 @@
 	 head /home/zw5j/.ssh/id_ed25519.pub
 	 cat /home/zw5j/.ssh/id_ed25519.pub
 	 ssh-add -k /home/zw5j/.ssh/id_ed25519.pub
+	 fc -ln -50 >> cl.log 
+	 git push -f origin main
+	 eval "$(ssh-agent -s)"
+	 ssh-add -k /home/zw5j/.ssh/id_ed25519.pub
+	 git add .
+	 git commit -m "upload scripts"
+	 git branch -M maingit remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git branch -M main
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git push -f origin main
+	 vi ~/.ssh/known_hosts
+	 git remote add origin https://github.com/zhenjiawang157/transciptional_condensates
+	 git push -f origin main
+	 vi /home/zw5j/.ssh/known_hosts
+	 git push -f origin main
